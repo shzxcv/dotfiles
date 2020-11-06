@@ -1,3 +1,3 @@
 # dotfiles
 
-vimrcにメインでdotfilesを管理
+vimrcメインでdotfilesを管理
