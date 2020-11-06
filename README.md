@@ -1,0 +1,3 @@
+# dotfiles
+
+vimrcにメインでdotfilesを管理
