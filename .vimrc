@@ -10,6 +10,11 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-endwise'
   Plug 'w0rp/ale'
   Plug 'alvan/vim-closetag'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
+  Plug 'bronson/vim-trailing-whitespace'
+  Plug 'tpope/vim-surround'
+  Plug 'airblade/vim-gitgutter'
 
   "Plug 'ctrlpvim/ctrlp.vim'
   "Plug 'tpope/vim-rails'
@@ -63,7 +68,7 @@ set tabstop=2
 set shiftwidth=2
 syntax on
 
-"カラー 
+"カラー
 set termguicolors
 colorscheme iceberg
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -89,6 +94,15 @@ set showcmd
 
 "バックスペースが効かない問題
 set backspace=indent,eol,start
+
+"ハイライト検索
+set hlsearch
+
+"インクリメンタル検索
+set incsearch
+
+"vim-gitgutter更新早く
+set updatetime=250
 
 "カッコとクォーテーション補完
 inoremap { {}<Left>
