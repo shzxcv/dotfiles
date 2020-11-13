@@ -12,6 +12,7 @@ alias cp='cp -i'
 alias vi='vim'
 alias sed='gsed'
 alias rails='bundle exec rails'
+alias rake='bundle exec rake'
 alias rspec='bundle exec rspec'
 
 #export PS1="[\u@\h \W]\$ "

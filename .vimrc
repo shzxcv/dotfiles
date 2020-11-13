@@ -15,6 +15,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'bronson/vim-trailing-whitespace'
   Plug 'tpope/vim-surround'
   Plug 'airblade/vim-gitgutter'
+  Plug 'ConradIrwin/vim-bracketed-paste'
 
   "Plug 'ctrlpvim/ctrlp.vim'
   "Plug 'tpope/vim-rails'
@@ -105,14 +106,14 @@ set incsearch
 set updatetime=250
 
 "カッコとクォーテーション補完
-inoremap { {}<Left>
-inoremap {<Enter> {}<Left><CR><ESC><S-o>
-inoremap ( ()<ESC>i
-inoremap (<Enter> ()<Left><CR><ESC><S-o>
-inoremap [ []<LEFT>
-inoremap [(<Enter> []<Left><CR><ESC><S-o>
-inoremap " ""<LEFT>
-inoremap ' ''<LEFT>
+"inoremap { {}<Left>
+"inoremap {<Enter> {}<Left><CR><ESC><S-o>
+"inoremap ( ()<ESC>i
+"inoremap (<Enter> ()<Left><CR><ESC><S-o>
+"inoremap [ []<LEFT>
+"inoremap [(<Enter> []<Left><CR><ESC><S-o>
+"inoremap " ""<LEFT>
+"inoremap ' ''<LEFT>
 
 "tmuxステータスライン無効
 if !has('gui_running') && $TMUX !=# ''
