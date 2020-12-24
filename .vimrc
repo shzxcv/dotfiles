@@ -16,6 +16,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-surround'
   Plug 'airblade/vim-gitgutter'
   Plug 'ConradIrwin/vim-bracketed-paste'
+  Plug 'tpope/vim-commentary'
+  Plug 'vim-jp/vimdoc-ja'
 
   "Plug 'ctrlpvim/ctrlp.vim'
   "Plug 'tpope/vim-rails'
@@ -69,11 +71,15 @@ set tabstop=2
 set shiftwidth=2
 syntax on
 
-"カラー
-set termguicolors
-colorscheme iceberg
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+"カラー(iceburge)
+"set termguicolors
+"colorscheme iceberg
+"let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+"let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+"カラー(solarize)
+set background=light
+colorscheme solarized
 
 "クリップポード連携
 set clipboard+=unnamed
@@ -105,15 +111,18 @@ set incsearch
 "vim-gitgutter更新早く
 set updatetime=250
 
+"0から始まる数字の加減 10進数扱い
+set nrformats=
+
 "カッコとクォーテーション補完
-"inoremap { {}<Left>
-"inoremap {<Enter> {}<Left><CR><ESC><S-o>
-"inoremap ( ()<ESC>i
-"inoremap (<Enter> ()<Left><CR><ESC><S-o>
-"inoremap [ []<LEFT>
-"inoremap [(<Enter> []<Left><CR><ESC><S-o>
-"inoremap " ""<LEFT>
-"inoremap ' ''<LEFT>
+inoremap { {}<Left>
+inoremap {<Enter> {}<Left><CR><ESC><S-o>
+inoremap ( ()<ESC>i
+inoremap (<Enter> ()<Left><CR><ESC><S-o>
+inoremap [ []<LEFT>
+inoremap [(<Enter> []<Left><CR><ESC><S-o>
+inoremap " ""<LEFT>
+inoremap ' ''<LEFT>
 
 "tmuxステータスライン無効
 if !has('gui_running') && $TMUX !=# ''

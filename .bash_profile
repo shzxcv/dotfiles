@@ -1,3 +1,5 @@
+#!/bin/bash
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.rbenv/shims:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
@@ -14,6 +16,7 @@ alias sed='gsed'
 alias rails='bundle exec rails'
 alias rake='bundle exec rake'
 alias rspec='bundle exec rspec'
+alias rubocop='bundle exec rubocop'
 
 #export PS1="[\u@\h \W]\$ "
 function parse_git_branch {
@@ -23,5 +26,9 @@ export PS1="\W \$(parse_git_branch) \\$ "
 
 alias rstop='for x in `lsof -i:3000 | awk '\''{print $2}'\'' | grep -v PID` ; do kill -9 $x ; done'
 alias rreload='for x in `lsof -i:3000 | awk '\''{print $2}'\'' | grep -v PID` ; do kill -9 $x ; done ; rails s -d'
+alias rroutes='ymdhm=`date +%Y%m%d_%H%M%S` ; rails routes > /tmp/routes_${ymdhm} ; open /tmp/routes_${ymdhm}'
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+alias ide='sh /Users/sho/.ide.sh'
+cd ~/app/vimate; tmux
