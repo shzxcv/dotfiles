@@ -18,6 +18,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'ConradIrwin/vim-bracketed-paste'
   Plug 'tpope/vim-commentary'
   Plug 'vim-jp/vimdoc-ja'
+  Plug 'skanehira/preview-markdown.vim'
 
   "Plug 'ctrlpvim/ctrlp.vim'
   "Plug 'tpope/vim-rails'
@@ -113,6 +114,9 @@ set updatetime=250
 
 "0から始まる数字の加減 10進数扱い
 set nrformats=
+
+"全角記号
+set ambiwidth=double
 
 "カッコとクォーテーション補完
 inoremap { {}<Left>

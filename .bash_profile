@@ -24,11 +24,15 @@ function parse_git_branch {
 }
 export PS1="\W \$(parse_git_branch) \\$ "
 
-alias rstop='for x in `lsof -i:3000 | awk '\''{print $2}'\'' | grep -v PID` ; do kill -9 $x ; done'
-alias rreload='for x in `lsof -i:3000 | awk '\''{print $2}'\'' | grep -v PID` ; do kill -9 $x ; done ; rails s -d'
+source /usr/local/etc/bash_completion.d/git-completion.bash
+
+#alias rstop='for x in `lsof -i:9292 | awk '\''{print $2}'\'' | grep -v PID` ; do kill -9 $x ; done'
+alias rstop='cat tmp/pids/server.pid | xargs kill -9'
+alias rreload='for x in `lsof -i:9292 | awk '\''{print $2}'\'' | grep -v PID` ; do kill -9 $x ; done ; rails s -d'
 alias rroutes='ymdhm=`date +%Y%m%d_%H%M%S` ; rails routes > /tmp/routes_${ymdhm} ; open /tmp/routes_${ymdhm}'
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 alias ide='sh /Users/sho/.ide.sh'
-cd ~/app/vimate; tmux
+
+HISTFILESIZE=10000
