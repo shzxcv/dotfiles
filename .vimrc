@@ -79,7 +79,7 @@ syntax on
 "let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 "カラー(solarize)
-set background=light
+set background=dark
 colorscheme solarized
 
 "クリップポード連携
