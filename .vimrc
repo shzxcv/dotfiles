@@ -19,6 +19,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-commentary'
   Plug 'vim-jp/vimdoc-ja'
   Plug 'skanehira/preview-markdown.vim'
+  Plug 'nvie/vim-flake8'
 
   "Plug 'ctrlpvim/ctrlp.vim'
   "Plug 'tpope/vim-rails'
@@ -79,7 +80,7 @@ syntax on
 "let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 "カラー(solarize)
-set background=light
+set background=dark
 colorscheme solarized
 
 "クリップポード連携
@@ -117,6 +118,9 @@ set nrformats=
 
 "全角記号
 set ambiwidth=double
+
+"長文表示
+set display=lastline
 
 "カッコとクォーテーション補完
 inoremap { {}<Left>
