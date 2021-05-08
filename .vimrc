@@ -21,13 +21,16 @@ call plug#begin('~/.vim/plugged')
   Plug 'skanehira/preview-markdown.vim'
   Plug 'nvie/vim-flake8'
 
-  "Plug 'ctrlpvim/ctrlp.vim'
-  "Plug 'tpope/vim-rails'
   "lspコード補完
-  "Plug 'prabirshrestha/vim-lsp'
-  "Plug 'mattn/vim-lsp-settings'
-  "Plug 'prabirshrestha/asyncomplete.vim'
-  "Plug 'prabirshrestha/asyncomplete-lsp.vim'
+  Plug 'prabirshrestha/asyncomplete.vim'
+  Plug 'prabirshrestha/asyncomplete-lsp.vim'
+  Plug 'prabirshrestha/vim-lsp'
+  Plug 'mattn/vim-lsp-settings'
+  Plug 'mattn/vim-lsp-icons'
+
+  Plug 'hrsh7th/vim-vsnip'
+  Plug 'hrsh7th/vim-vsnip-integ'
+
 call plug#end()
 
 "---プラグイン設定---"
