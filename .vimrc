@@ -40,7 +40,7 @@ let g:ale_fixers = {
 
 "vim-closetag
 "補完対象ファイル
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.erb,*.php,*.vue'
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.erb,*.php,*.vue,*.js'
 
 "NERDTREE
 "オープンクローズ
@@ -122,6 +122,9 @@ set ambiwidth=double
 
 "長文表示
 set display=lastline
+
+"ステータスライン無効
+set laststatus=0
 
 "カッコとクォーテーション補完
 inoremap { {}<Left>

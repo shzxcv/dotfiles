@@ -2,10 +2,14 @@
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export PATH="$HOME/.poetry/bin:$PATH"
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
-eval "$(pyenv init -)"
 
 alias ls="ls -G"
 alias ll="ls -l"
@@ -32,5 +36,12 @@ alias rstop='cat tmp/pids/server.pid | xargs kill -9'
 
 alias ide='sh ~/.ide.sh'
 
-HISTSIZE=10000
-HISTFILESIZE=10000
+HISTSIZE=100000
+HISTFILESIZE=100000
+
+export PATH="$HOME/.poetry/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
+alias acc_test='oj t -c "ruby main.rb" -d ./test/'
+
+[ -z "$(ls /Users/sho/remote_app)" ] && sshfs ec2_dev://home/ec2-user/app /Users/sho/remote_app/
