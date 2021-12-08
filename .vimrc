@@ -20,6 +20,11 @@ call plug#begin('~/.vim/plugged')
   Plug 'vim-jp/vimdoc-ja'
   Plug 'skanehira/preview-markdown.vim'
 
+  "Go
+  Plug 'benmills/vimux'
+  Plug 'fatih/vim-go'
+  Plug 'sebdah/vim-delve'
+
   "lspコード補完
   Plug 'prabirshrestha/asyncomplete.vim'
   Plug 'prabirshrestha/asyncomplete-lsp.vim'
@@ -145,7 +150,11 @@ if !has('gui_running') && $TMUX !=# ''
 endif
 
 "terminalでbash_profile読み込み
-let &shell='/bin/bash --login'
+"let &shell='/bin/bash --login'
 
 "vim lsp
 let g:lsp_diagnostics_echo_cursor = 1
+
+"vim go
+let g:delve_use_vimux = 1
+autocmd FileType go nmap <silent> ;d :DlvToggleBreakpoint<CR>
