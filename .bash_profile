@@ -1,5 +1,6 @@
 #!/bin/bash
 export BASH_SILENCE_DEPRECATION_WARNING=1
+export PATH=$PATH:$HOME/bin
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="$HOME/.poetry/bin:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
@@ -7,6 +8,11 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PS1=' \[\e[0m\]\w \[\e[0m\](\[\e[0m\]$(git branch 2>/dev/null | grep '"'"'^*'"'"' | colrm 1 2)\[\e[0m\]) \[\e[0m\]'
+
+# go
+GOPATH="/Users/sho/go"
+export GOPATH
+export PATH="$GOPATH/bin:$PATH"
 
 eval "$(pyenv init --path)"
 eval "$(rbenv init -)"
@@ -24,6 +30,8 @@ alias rake='bundle exec rake'
 alias rspec='bundle exec rspec'
 alias rubocop='bundle exec rubocop'
 alias acc_test='oj t -c "ruby main.rb" -d ./test/'
+alias gits='git status'
+alias gitd='git diff'
 
 HISTSIZE=100000
 HISTFILESIZE=100000

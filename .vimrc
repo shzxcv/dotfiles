@@ -22,7 +22,8 @@ call plug#begin('~/.vim/plugged')
 
   "Go
   Plug 'benmills/vimux'
-  Plug 'fatih/vim-go'
+  " Plug 'fatih/vim-go'
+  Plug 'mattn/vim-goimports'
   Plug 'sebdah/vim-delve'
 
   "lspコード補完
@@ -86,7 +87,7 @@ syntax on
 "let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 "カラー(solarize)
-set background=dark
+set background=light
 colorscheme solarized
 
 "クリップポード連携
@@ -155,6 +156,8 @@ endif
 "vim lsp
 let g:lsp_diagnostics_echo_cursor = 1
 
-"vim go
+"delve
 let g:delve_use_vimux = 1
 autocmd FileType go nmap <silent> ;d :DlvToggleBreakpoint<CR>
+
+"goimports
