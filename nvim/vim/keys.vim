@@ -12,13 +12,6 @@ inoremap (<Enter> ()<Left><CR><ESC><S-o>
 inoremap [ []<LEFT>
 inoremap [(<Enter> []<Left><CR><ESC><S-o>
 inoremap ' ''<LEFT>
-" Vim files not complete
-" [Issue] Vim files open from Nerdtree is not working.
-" autocmd BufNewFile,BufReadPre *\(.vim\)\@<! inoremap " ""<LEFT>
-autocmd Filetype * call AutoCompleteDoubleQuote()
-
-function! AutoCompleteDoubleQuote()
-  if expand("%:e") != "vim"
-    inoremap " ""<LEFT>
-  endif
-endfunction
+" Double quote completion for all but vim files
+autocmd BufNewFile,BufReadPre,BufEnter *.vim,*.nerdtree inoremap " "
+autocmd BufNewFile,BufReadPre,BufEnter *\(.vim\|.nerdtree\)\@<! inoremap " ""<LEFT>
