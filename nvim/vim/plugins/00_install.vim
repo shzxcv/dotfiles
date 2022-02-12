@@ -11,6 +11,4 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   "" Goimports
   Plug 'mattn/vim-goimports'
-  "" Tab label
-  " Plug 'romgrk/barbar.nvim'
 call plug#end()
