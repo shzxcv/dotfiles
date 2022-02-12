@@ -5,4 +5,8 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'ryanoasis/vim-devicons'
   " A project which translate Vim documents into Japanese.
   Plug 'vim-jp/vimdoc-ja'
+  " Indent Guide
+  Plug 'lukas-reineke/indent-blankline.nvim'
+  " LSP
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
