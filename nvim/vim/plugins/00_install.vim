@@ -9,4 +9,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'lukas-reineke/indent-blankline.nvim'
   " LSP
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  " Goimports
+  Plug 'mattn/vim-goimports'
 call plug#end()
