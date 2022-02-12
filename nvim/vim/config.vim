@@ -8,7 +8,4 @@ set cursorline
 "" Not case sensitive
 set ignorecase
 
-"" 要らない？
-set pumblend=20
-
-"" [Want] Rename the buffer labels
+"" [Want] source init.vim, plug install, plug clean
