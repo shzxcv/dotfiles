@@ -10,7 +10,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export PS1=' \[\e[0m\]\w \[\e[0m\](\[\e[0m\]$(git branch 2>/dev/null | grep '"'"'^*'"'"' | colrm 1 2)\[\e[0m\]) \[\e[0m\]'
 
 # go
-GOPATH="/Users/sho/go"
+GOPATH=$HOME/go
 export GOPATH
 export PATH="$GOPATH/bin:$PATH"
 
