@@ -2,17 +2,17 @@
     "coc.preferences.formatOnSaveFiletypes": [
         "markdown",
         "json"
-    ],
-    "languageserver": {
-        "go": {
-            "command": "gopls",
-            "rootPatterns": [
-                "go.mod"
-            ],
-            "trace.server": "verbose",
-            "filetypes": [
-                "go"
-            ]
-        }
-    }
+    ]
+    // "languageserver": {
+    //     "go": {
+    //         "command": "gopls",
+    //         "rootPatterns": [
+    //             "go.mod"
+    //         ],
+    //         "trace.server": "verbose",
+    //         "filetypes": [
+    //             "go"
+    //         ]
+    //     }
+    // }
 }
