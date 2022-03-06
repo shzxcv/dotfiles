@@ -1,5 +1,5 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["markdown", "json"],
+  "coc.preferences.formatOnSaveFiletypes": ["markdown", "json", "c"],
   "languageserver": {
     "go": {
       "command": "gopls",
