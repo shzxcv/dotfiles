@@ -10,7 +10,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export PS1=' \[\e[0m\]\w \[\e[0m\](\[\e[0m\]$(git branch 2>/dev/null | grep '"'"'^*'"'"' | colrm 1 2)\[\e[0m\]) \[\e[0m\]'
 
 # go
-GOPATH="/Users/sho/go"
+GOPATH=$HOME/go
 export GOPATH
 export PATH="$GOPATH/bin:$PATH"
 
@@ -18,6 +18,7 @@ eval "$(pyenv init --path)"
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
 
+# Alias
 alias ls="ls -G"
 alias ll="ls -l"
 alias rm='rm -i'
@@ -31,7 +32,11 @@ alias rspec='bundle exec rspec'
 alias rubocop='bundle exec rubocop'
 alias acc_test='oj t -c "ruby main.rb" -d ./test/'
 alias gits='git status'
+alias gitb='git branch'
 alias gitd='git diff'
+gitc() {
+  git commit -am "$1"
+}
 
 HISTSIZE=100000
 HISTFILESIZE=100000

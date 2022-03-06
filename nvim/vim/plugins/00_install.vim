@@ -11,4 +11,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   "" Goimports
   Plug 'mattn/vim-goimports'
+  "" GraphQL
+  Plug 'jparise/vim-graphql'
 call plug#end()

@@ -8,4 +8,7 @@ set cursorline
 "" Not case sensitive
 set ignorecase
 
+"" OS clipboard integration
+set clipboard+=unnamedplus
+
 "" [Want] source init.vim, plug install, plug clean
