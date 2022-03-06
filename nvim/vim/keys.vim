@@ -11,8 +11,6 @@ inoremap ( ()<ESC>i
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
 inoremap [ []<LEFT>
 inoremap [(<Enter> []<Left><CR><ESC><S-o>
-inoremap < <><LEFT>
-inoremap <(<Enter> <><Left><CR><ESC><S-o>
 inoremap ' ''<LEFT>
 " Double quote completion for all but vim files
 autocmd BufNewFile,BufReadPre,BufEnter *.vim,*.nerdtree inoremap " "
