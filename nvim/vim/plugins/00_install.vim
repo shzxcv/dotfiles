@@ -13,4 +13,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'mattn/vim-goimports'
   "" GraphQL
   Plug 'jparise/vim-graphql'
+  "" WhiteSpace
+  "[:StripWhitespace] is delete command.
+  Plug 'ntpeters/vim-better-whitespace'
 call plug#end()
