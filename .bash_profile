@@ -47,3 +47,5 @@ HISTFILESIZE=100000
 # alias rstop='cat tmp/pids/server.pid | xargs kill -9'
 # alias rreload='for x in `lsof -i:9292 | awk '\''{print $2}'\'' | grep -v PID` ; do kill -9 $x ; done ; rails s -d'
 # alias rroutes='ymdhm=`date +%Y%m%d_%H%M%S` ; rails routes > /tmp/routes_${ymdhm} ; open /tmp/routes_${ymdhm}'
+
+complete -C /usr/local/bin/terraform terraform
