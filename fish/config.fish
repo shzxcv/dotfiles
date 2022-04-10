@@ -8,3 +8,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 alias sed='gsed'
 alias ls='ls -a'
 alias ll='ls -al'
+
+# VI Mode
+fish_vi_key_bindings
