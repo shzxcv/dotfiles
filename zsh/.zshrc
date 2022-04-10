@@ -6,5 +6,5 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Alias Setting
 alias sed='gsed'
-alias ll='ls -l'
+alias ll='ls -al'
 
