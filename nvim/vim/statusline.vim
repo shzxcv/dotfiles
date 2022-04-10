@@ -3,7 +3,7 @@
 set statusline=%#PmenuSel#
 
 " Filename
-set statusline+=\ \ %t\ \  
+set statusline+=\ \ %t\ \
 
 " Modification flag[+]
 set statusline+=%m
@@ -18,4 +18,4 @@ set statusline+=%=
 set statusline+=%y
 
 " File encoding
-set statusline+=\ %{&fileencoding?&fileencoding:&encoding}\ 
+set statusline+=\ %{&fileencoding?&fileencoding:&encoding}\
