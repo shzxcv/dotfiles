@@ -1,8 +1,10 @@
 # Homebrew Setting
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if is_mac_m1
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+end
 
 # asdf Setting
-. /opt/homebrew/opt/asdf/libexec/asdf.fish
+source (brew --prefix asdf)/libexec/asdf.fish
 
 # Alias Setting
 alias sed='gsed'
