@@ -12,3 +12,7 @@ alias ll='ls -al'
 # VI Mode
 fish_vi_key_bindings
 bind -M insert \cf forward-char
+
+# Go
+set GOPATH $HOME/go
+set PATH $PATH:$GOPATH/bin
