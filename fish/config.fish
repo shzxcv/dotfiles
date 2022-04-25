@@ -9,7 +9,7 @@ source (brew --prefix asdf)/libexec/asdf.fish
 # Alias Setting
 alias sed='gsed'
 alias grep='ggrep'
-alias ls='ls -a'
+alias ls='ls -aG'
 alias ll='ls -al'
 
 # VI Mode
