@@ -19,3 +19,6 @@ bind -M insert \cf forward-char
 # Go
 set GOPATH $HOME/go
 set PATH $PATH:$GOPATH/bin
+
+# ls Color dir
+export LSCOLORS=gxfxcxdxbxegedabagacad
