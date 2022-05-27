@@ -16,4 +16,6 @@ call plug#begin('~/.config/nvim/plugged')
   "" WhiteSpace
   "[:StripWhitespace] is delete command.
   Plug 'ntpeters/vim-better-whitespace'
+  "" Preview Markdown
+  Plug 'iamcco/markdown-preview.nvim'
 call plug#end()
