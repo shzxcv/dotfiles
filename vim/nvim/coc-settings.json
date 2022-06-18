@@ -3,7 +3,8 @@
     "markdown",
     "json",
     "c",
-    "typescriptreact"
+    "typescriptreact",
+    "yaml"
   ],
   "languageserver": {
     "go": {
