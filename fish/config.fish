@@ -7,10 +7,16 @@ end
 source (brew --prefix asdf)/libexec/asdf.fish
 
 # Alias Setting
-alias sed='gsed'
-alias grep='ggrep'
 alias ls='ls -aG'
 alias ll='ls -al'
+
+# Alias GNU Comand
+alias sed='gsed'
+alias grep='ggrep'
+alias awk='gawk'
+alias find='gfind'
+alias xargs='gxargs'
+alias tar='gtar'
 
 # VI Mode
 fish_vi_key_bindings
