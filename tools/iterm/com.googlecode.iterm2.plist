@@ -2,8 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AllowClipboardAccess</key>
+	<true/>
 	<key>Default Bookmark Guid</key>
-	<string>B769CFD6-A089-4337-9F37-5CE18D7DD99A</string>
+	<string>5BA7CD4A-4ED7-495C-8E5D-4260B2D89C42</string>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
@@ -301,7 +303,7 @@
 				<real>0.396078431372549</real>
 			</dict>
 			<key>Guid</key>
-			<string>B769CFD6-A089-4337-9F37-5CE18D7DD99A</string>
+			<string>5BA7CD4A-4ED7-495C-8E5D-4260B2D89C42</string>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
 			<key>Idle Code</key>
@@ -684,7 +686,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/sho</string>
+			<string>/Users/tanaka</string>
 		</dict>
 	</array>
 	<key>PointerActions</key>
@@ -724,5 +726,7 @@
 	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 </dict>
 </plist>
