@@ -1,11 +1,5 @@
 # Homebrew Setting
-if is_mac_m1
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-end
-
-if is_wsl
-    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-end
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # asdf Setting
 source (brew --prefix asdf)/libexec/asdf.fish
@@ -13,6 +7,21 @@ source (brew --prefix asdf)/libexec/asdf.fish
 # VI Mode
 fish_vi_key_bindings
 bind -M insert \cf forward-char
+
+# Alias Setting
+alias ls='ls -aG'
+alias ll='ls -al'
+
+# Alias GNU Comand
+alias sed='gsed'
+alias grep='ggrep'
+alias awk='gawk'
+alias find='gfind'
+alias xargs='gxargs'
+alias tar='gtar'
+
+# ls Color dir
+export LSCOLORS=gxfxcxdxbxegedabagacad
 
 # Go
 set PATH $PATH:/usr/local/go/bin
