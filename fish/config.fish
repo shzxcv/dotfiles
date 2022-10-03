@@ -19,6 +19,7 @@ alias awk='gawk'
 alias find='gfind'
 alias xargs='gxargs'
 alias tar='gtar'
+alias date='gdate'
 
 # ls Color dir
 export LSCOLORS=gxfxcxdxbxegedabagacad
