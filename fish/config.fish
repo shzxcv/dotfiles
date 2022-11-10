@@ -28,3 +28,6 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 set PATH $PATH:/usr/local/go/bin
 set GOPATH $HOME/go
 set PATH $PATH:$GOPATH/bin
+
+# Rust
+set PATH $HOME/.cargo/bin:$PATH

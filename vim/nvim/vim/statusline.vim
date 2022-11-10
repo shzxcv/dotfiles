@@ -3,7 +3,7 @@
 set statusline=%#PmenuSel#
 
 " Filename
-set statusline+=\ \ %t\ \
+set statusline+=\ \ %f\ \
 
 " Modification flag[+]
 set statusline+=%m
