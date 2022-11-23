@@ -7,9 +7,9 @@ function MyTabLabel(n)
 
   if label == "NERD_tree_1"
     let label = bufname(buflist[winnr - 2])
-    return fnamemodify(label, ":t")
+    return fnamemodify(label, ":p:.")
   else
-    return fnamemodify(label, ":t")
+    return fnamemodify(label, ":p:.")
   endif
 endfunction
 
