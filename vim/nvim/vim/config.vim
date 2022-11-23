@@ -11,4 +11,7 @@ set ignorecase
 "" OS clipboard integration
 set clipboard+=unnamedplus
 
+"" SwapFile
+set noswapfile
+
 "" [Want] source init.vim, plug install, plug clean
