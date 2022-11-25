@@ -18,4 +18,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'ntpeters/vim-better-whitespace'
   "" Preview Markdown
   Plug 'iamcco/markdown-preview.nvim'
+  "" Telescope
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 call plug#end()
