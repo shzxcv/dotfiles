@@ -1,5 +1,8 @@
 "" Leader Key
+" Mapping
 let mapleader = " "
+" Wait Time
+set timeoutlen=100
 
 "" Switching Buffers
 " Next
