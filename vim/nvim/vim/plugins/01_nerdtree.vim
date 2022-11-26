@@ -1,6 +1,3 @@
-"" Key mapping
-nnoremap <silent><C-e> :NERDTreeToggle<CR>
-
 "" Show hidden files
 let NERDTreeShowHidden=1
 

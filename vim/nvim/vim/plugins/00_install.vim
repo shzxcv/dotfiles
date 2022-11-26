@@ -21,4 +21,6 @@ call plug#begin('~/.config/nvim/plugged')
   "" Telescope
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+  "" Terminal
+  Plug 'voldikss/vim-floaterm'
 call plug#end()
