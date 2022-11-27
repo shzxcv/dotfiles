@@ -24,6 +24,10 @@ nnoremap <silent><Leader>e :NERDTreeToggle<CR>
 nnoremap <silent> <Leader>t :FloatermToggle<CR>
 tnoremap <silent> <Leader>t <C-\><C-n>:FloatermToggle<CR>
 
+"" Paste Indentation
+nnoremap p p=']^
+nnoremap P P='[^
+
 "" AutoComplete quotes, brackets
 inoremap { {}<Left>
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
