@@ -4,6 +4,9 @@ let mapleader = " "
 " Wait Time
 set timeoutlen=200
 
+"" iskeyboard
+setlocal isk+=-
+
 "" Switching Buffers
 " Next
 nnoremap <C-n> gt
