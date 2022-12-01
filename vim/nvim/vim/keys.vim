@@ -2,7 +2,7 @@
 " Mapping
 let mapleader = " "
 " Wait Time
-set timeoutlen=100
+set timeoutlen=200
 
 "" Switching Buffers
 " Next
@@ -40,3 +40,7 @@ inoremap ' ''<LEFT>
 "" Double quote completion for all but vim files
 autocmd BufNewFile,BufReadPre,BufEnter *.vim,*.nerdtree inoremap " "
 autocmd BufNewFile,BufReadPre,BufEnter *\(.vim\|.nerdtree\)\@<! inoremap " ""<LEFT>
+
+"" text-case.nvim
+nnoremap <leader>s :lua require('textcase').current_word('to_snake_case')<CR>
+nnoremap <leader>c :lua require('textcase').current_word('to_pascal_case')<CR>

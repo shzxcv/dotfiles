@@ -23,4 +23,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
   "" Terminal
   Plug 'voldikss/vim-floaterm'
+  "" Converting Text
+  Plug 'johmsalas/text-case.nvim'
 call plug#end()
