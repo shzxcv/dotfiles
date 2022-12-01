@@ -25,4 +25,8 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'voldikss/vim-floaterm'
   "" Converting Text
   Plug 'johmsalas/text-case.nvim'
+  "" Surround
+  Plug 'kylechui/nvim-surround'
+  "" Complement pairs
+  Plug 'jiangmiao/auto-pairs'
 call plug#end()
