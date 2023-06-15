@@ -1,5 +1,5 @@
 "" ColorSchema
-set background=dark
+set background=light
 colorscheme solarized
 
 "" line in the row
