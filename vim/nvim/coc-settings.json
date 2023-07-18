@@ -1,4 +1,5 @@
 {
+    "coc.preferences.jumpCommand": "tabe",
     "coc.preferences.formatOnSaveFiletypes": [
         "markdown",
         "json",
