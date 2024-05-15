@@ -15,6 +15,7 @@ nnoremap <C-p> gT
 
 "" Coc
 nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gr <Plug>(coc-references)
 
 "" Telescope
 nnoremap <leader>f <cmd>Telescope find_files<cr>

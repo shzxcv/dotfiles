@@ -4,6 +4,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # asdf Setting
 source (brew --prefix asdf)/libexec/asdf.fish
 
+# gcloud
+source "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc"
+
 # VI Mode
 fish_vi_key_bindings
 bind -M insert \cf forward-char
