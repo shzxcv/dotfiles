@@ -17,4 +17,8 @@ set noswapfile
 "" Disabled mouse
 set mouse=
 
-"" [Want] source init.vim, plug install, plug clean
+"" Number
+set number
+
+
+" [Want] source init.vim, plug install, plug clean

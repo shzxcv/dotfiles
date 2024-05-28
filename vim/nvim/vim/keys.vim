@@ -16,6 +16,9 @@ nnoremap <C-p> gT
 "" Coc
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gr <Plug>(coc-references)
+" tmp
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
 nnoremap <silent> gl <cmd>CocList outline<cr>
 
 "" Telescope
