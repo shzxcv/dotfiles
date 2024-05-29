@@ -35,5 +35,5 @@ set PATH $PATH:$GOPATH/bin
 # Rust
 set PATH $HOME/.cargo/bin:$PATH
 
-# ChatGPT
-alias chatgpt='python $HOME/app/tmp/gpt-cli/gpt.py'
+# zoxide
+zoxide init fish | source

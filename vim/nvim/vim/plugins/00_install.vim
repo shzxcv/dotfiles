@@ -29,6 +29,4 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'kylechui/nvim-surround'
   "" Complement pairs
   Plug 'jiangmiao/auto-pairs'
-  "" Copilot
-  Plug 'github/copilot.vim'
 call plug#end()
