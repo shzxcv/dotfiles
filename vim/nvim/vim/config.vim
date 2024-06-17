@@ -1,6 +1,6 @@
 "" ColorSchema
 set background=light
-colorscheme solarized
+colorscheme solarized8
 
 "" line in the row
 set cursorline
