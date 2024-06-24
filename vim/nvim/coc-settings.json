@@ -4,7 +4,8 @@
         "json",
         "c",
         "yaml",
-        "python"
+        "python",
+        "go"
     ],
     "python.formatting.provider": "black",
     "python.formatting.blackPath": "~/.asdf/shims/black",
