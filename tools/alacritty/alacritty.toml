@@ -46,4 +46,4 @@ args = ["--login"]
 program = "/opt/homebrew/bin/fish"
 
 [env]
-term = "xterm-256color"
+term = "alacritty"

@@ -1,7 +1,7 @@
 "" ColorSchema
 set background=light
-" colorscheme solarized8
 colorscheme solarized
+set notermguicolors
 
 "" line in the row
 set cursorline
