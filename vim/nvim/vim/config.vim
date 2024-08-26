@@ -1,6 +1,7 @@
 "" ColorSchema
 set background=light
 colorscheme solarized8
+" colorscheme github_dark
 set termguicolors
 
 "" line in the row

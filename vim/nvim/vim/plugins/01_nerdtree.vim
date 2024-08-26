@@ -1,7 +1,10 @@
 "" Show hidden files
 let NERDTreeShowHidden=1
 
-"" Start NERDTree. If a file is specified, move the cursor to its window.
+"" If you change the nerdtree root directory, change the vim cd
+let NERDTreeChDirMode=2
+
+" Start NERDTree. If a file is specified, move the cursor to its window.
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
 
