@@ -5,5 +5,5 @@ nodejs 20.14.0
 yarn 1.22.19
 pnpm 7.9.4-0
 golang 1.22.3
-terraform-ls 0.33.3
+terraform-ls 0.34.3
 terraform 1.9.1
