@@ -3,8 +3,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # asdf Setting
 source (brew --prefix asdf)/libexec/asdf.fish
-## asdf golang
-source ~/.asdf/plugins/golang/set-env.fish
 
 # gcloud
 source "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc"
