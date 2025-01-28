@@ -44,6 +44,3 @@ style = "Regular"
 [shell]
 program = "/opt/homebrew/bin/fish"
 args = ["-l", "-c", "tmux a -t 0 || tmux"]
-
-[env]
-term = "alacritty"
