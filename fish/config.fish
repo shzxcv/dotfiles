@@ -24,16 +24,5 @@ alias xargs='gxargs'
 alias tar='gtar'
 alias date='gdate'
 
-# ls Color dir
+# ls Color eir
 export LSCOLORS=gxfxcxdxbxegedabagacad
-
-# Go
-set PATH $PATH:/usr/local/go/bin
-set GOPATH $HOME/go
-set PATH $PATH:$GOPATH/bin
-
-# Rust
-set PATH $HOME/.cargo/bin:$PATH
-
-# zoxide
-zoxide init fish | source
