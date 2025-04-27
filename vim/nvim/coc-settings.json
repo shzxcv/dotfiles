@@ -11,16 +11,6 @@
     "python.formatting.blackPath": "~/.asdf/shims/black",
     "intelephense.environment.phpVersion": "5.6",
     "languageserver": {
-        "go": {
-            "command": "gopls",
-            "rootPatterns": [
-                "go.mod"
-            ],
-            "trace.server": "verbose",
-            "filetypes": [
-                "go"
-            ]
-        },
         "ccls": {
             "command": "ccls",
             "filetypes": [
