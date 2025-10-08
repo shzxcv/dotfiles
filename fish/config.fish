@@ -9,7 +9,7 @@ source "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc"
 
 # VI Mode
 fish_vi_key_bindings
-bind -M insert \cf forward-char
+bind --mode insert \cf forward-char
 
 # Alias Setting
 alias ls='ls -aG'
