@@ -41,6 +41,8 @@ style = "Italic"
 family = "Hack Nerd Font"
 style = "Regular"
 
-[shell]
+[terminal]
+
+[terminal.shell]
 program = "/opt/homebrew/bin/fish"
 args = ["-l", "-c", "tmux a -t 0 || tmux"]
