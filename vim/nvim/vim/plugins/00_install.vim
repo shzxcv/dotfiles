@@ -15,7 +15,7 @@ call plug#begin('~/.config/nvim/plugged')
   "[:StripWhitespace] is delete command.
   Plug 'ntpeters/vim-better-whitespace'
   "" Preview Markdown
-  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
   "" Telescope
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.6' }
